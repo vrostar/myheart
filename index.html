@@ -9,37 +9,43 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
     <script defer src="app.js" type="module"></script>
-    <title>What the heart doing</title>
+    <title>Heart Chance</title>
 </head>
 
 <body>
 
+
 <h1>Give your heart a chance</h1>
 
-<img src="https://cdn.discordapp.com/attachments/947669778590470167/1095458785344114748/heart-isometric-health-care-concept-red-shape-and-heartbeat-vector-illustration.png"
-     alt="heartline" style="width:420px;height:420px;">
+<img src="https://cdn.discordapp.com/attachments/947669778590470167/1097226898855170179/waheart.png"
+     alt="heartline" style="width:300px;height:300px;">
 <br/>
 
 <section>
-    <h1>The Explanation</h1>
-    <h2>"Give your heart a chance" is a tool you can use to find out your risk of having a hearts attack.</h2>
-    <h2>Just fill in you age, the amount of chest pain you are feeling (1-4) and your current heart rate</h2>
+    <h1>The Explanation </h1>
+    <h2>"Heart Chance" is a tool you can use to find out your risk of having a heart attack.</h2>
+    <h2>Just fill in you age, the amount of chest pain you are feeling (0-3) and your current heart rate.</h2>
+    <h3>Result: </h3>
+    <div id="heartAttack"></div>
 </section>
 
-<section>
+<section class="form">
     <label for='age' class="">age:</label>
     <input type='text' id='age' name="age"/>
+    <br/>
     <label for='cp' class="">chest pain:</label>
-    <input type='text' id='cp' name="cp"/>
+    <select name="cp" id="cp">
+        <option value="0">0</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+    </select>
+    <br/>
     <label for='thalach' class="">heart rate:</label>
     <input type='text' id='thalach' name="thalach"/>
 </section>
 
 <button id="heart">My heart</button>
-
-<section>
-<div id="heartAttack"></div>
-</section>
 
 </body>
 </html>

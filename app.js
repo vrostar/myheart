@@ -22,10 +22,10 @@ function modelLoaded(model) {
 
     if (prediction == 1) {
         let element = document.getElementById("heartAttack")
-        element.innerText = `You have a higher chance of a heart attack! Be careful`
+        element.innerText = `You have a higher chance of having a heart attack! Be careful.`
     } else {
         let element = document.getElementById("heartAttack")
-        element.innerText = `You have a normal chance of getting a heart attack.`
+        element.innerText = `You have a healthy heart, low chance of getting a heart attack!`
     }
 
 }
